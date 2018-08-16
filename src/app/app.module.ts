@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
 import { DescripProductoComponent } from './descrip-producto/descrip-producto.component';
+import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { DescripProductoComponent } from './descrip-producto/descrip-producto.co
     LoginComponent,
     HomePageComponent,
     CarritoComprasComponent,
-    DescripProductoComponent
+    DescripProductoComponent,
+    BarraNavegacionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    AppRoutingModule,
 
   ],
   providers: [],
