@@ -13,11 +13,14 @@ import { RegistroComponent } from './registro/registro.component';
 
 import { AppRoutingModule } from './/app-routing.module';
 
+import {FlashMessagesModule} from 'angular2-flash-messages';
+import {FlashMessagesService} from 'angular2-flash-messages';
 import {AngularFireModule} from 'angularfire2';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 
 import  {environment} from '../environments/environment';
 import {AuthService} from './auth.service';
+import {AuthGuard} from './auth.guard';
 
 
 @NgModule({
@@ -36,10 +39,13 @@ import {AuthService} from './auth.service';
     HttpModule,
     AppRoutingModule,
     AngularFireAuthModule,
+    FlashMessagesModule,
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [
-    AuthService
+    AuthService,
+    AuthGuard,
+    FlashMessagesService
   ],
   bootstrap: [AppComponent]
 })
