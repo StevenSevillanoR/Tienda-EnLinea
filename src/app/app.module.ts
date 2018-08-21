@@ -16,15 +16,15 @@ import { CarritoComprasComponent } from './carrito-compras/carrito-compras.compo
 import { DescripProductoComponent } from './descrip-producto/descrip-producto.component';
 import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
 import { RegistroComponent } from './registro/registro.component';
-import { ProductosComponent} from './productos/productos.component';
+import { ProductosComponent } from './productos/productos.component';
 
-import { environment} from '../environments/environment';
+import { environment } from '../environments/environment';
 
 import { ProductosService } from './productos.service';
-import { AuthService} from './auth.service';
-import { FlashMessagesService} from 'angular2-flash-messages';
+import { AuthService } from './auth.service';
+import { FlashMessagesService } from 'angular2-flash-messages';
 
-import { AuthGuard} from './auth.guard';
+import { AuthGuard } from './auth.guard';
 
 
 @NgModule({
