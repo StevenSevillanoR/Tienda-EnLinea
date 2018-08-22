@@ -8,6 +8,7 @@ import { AngularFireModule} from 'angularfire2';
 import { AngularFireStorageModule} from 'angularfire2/storage';
 import { AngularFireAuthModule} from 'angularfire2/auth';
 import { AngularFirestoreModule} from 'angularfire2/firestore';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -25,6 +26,7 @@ import { AuthService } from './auth.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 
 import { AuthGuard } from './auth.guard';
+import { SearchPipe } from './search.pipe';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { AuthGuard } from './auth.guard';
     DescripProductoComponent,
     BarraNavegacionComponent,
     RegistroComponent,
-    ProductosComponent
+    ProductosComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { AuthGuard } from './auth.guard';
     HttpModule,
     AppRoutingModule,
     AngularFireAuthModule,
+    Angular2FontawesomeModule,
     FlashMessagesModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
