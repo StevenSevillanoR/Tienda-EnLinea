@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './/app-routing.module';
 import { FlashMessagesModule} from 'angular2-flash-messages';
 import { AngularFireModule} from 'angularfire2';
-import { AngularFireStorageModule} from 'angularfire2/storage';
+//import { AngularFireStorageModule} from 'angularfire2/storage';
 import { AngularFireAuthModule} from 'angularfire2/auth';
 import { AngularFirestoreModule} from 'angularfire2/firestore';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
@@ -50,7 +50,7 @@ import { SearchPipe } from './search.pipe';
     Angular2FontawesomeModule,
     FlashMessagesModule,
     AngularFirestoreModule,
-    AngularFireStorageModule,
+    //AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig, 'TiendaEnLinea')
   ],
   providers: [
