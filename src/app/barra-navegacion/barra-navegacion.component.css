@@ -1,0 +1,22 @@
+.rounded-circle{
+  width: 45px;
+  height: 45px;
+}
+
+nav{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 12px;
+}
+
+.navbar-brand{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (min-width:1092px){
+  .email{
+
+    padding-top: 15px !important;
+  }
+}

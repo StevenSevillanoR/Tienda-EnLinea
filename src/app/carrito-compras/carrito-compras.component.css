@@ -1,0 +1,78 @@
+.fondo-principal{
+  width: 100vw;
+  height: 200vw;
+  background-image: url(/src/assets/img/main-fondo.jpg) !important;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #fff;
+}
+
+h1{
+  font-size: 30px;
+  padding-left: 15px;
+}
+
+.container-fluid{
+  width: 100%;
+  padding-left: 0px;
+  margin-left:0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.jumbotron{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #fff;
+}
+
+.descripcion{
+  font-size: 1.5em;
+}
+
+.title{
+  padding-left: 15px;
+}
+
+.subtotal{
+  margin-left: 15px;
+  padding-top: 10px;
+  font-size: 1.5em !important;
+}
+
+.imgProd{
+  width: 100%;
+}
+
+.card{
+  left: 12px;
+  border: 0px;
+}
+
+.productosSel{
+
+  padding-top: 15px;
+}
+
+.containertotal{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: list-item;
+}
+
+.totalLabel{
+  display: block;
+}
+
+.btn-group{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+
+}

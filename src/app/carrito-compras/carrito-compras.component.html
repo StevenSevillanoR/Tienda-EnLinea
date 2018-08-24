@@ -1,0 +1,60 @@
+<div class="container-fluid fondo-principal">
+  <barra-navegacion></barra-navegacion>
+  <div class="jumbotron">
+    <div class="row card-body">
+      <div class="row card col-sm-12">
+        <div class="row title">
+          <h1><i fa class="fa fa-shopping-cart fa-lg text-info"></i> Carrito de Compras</h1>
+        </div>
+        <hr class="my-4">
+        <div class="row card-body" *ngIf="productos?.length>0;else noProductos">
+          <div class="col-sm-7 productosSel" *ngFor = "let productMos of productos">
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="{{productMos.imagen.path}}" class="img-thumbnail imgProd"/>
+              </div>
+              <div class="col-sm-9 descripcion">
+                <label class="nombreProd"><b><span>{{productMos.nombre}}</span></b></label>
+                <br>
+                <label class="cantidadProd"><b>Unidades: </b> <span>{{productMos.cantidad}}</span></label>
+                <br>
+                <label class="precioProd"><b>Precio Unidad: </b> <span>{{productMos.precio}}</span></label>
+                <br>
+              </div>
+            </div>
+            <div class="row">
+              <label class="subtotal"><b>Subtotal: $</b><span>{{productMos.subtotal}}</span></label>
+              <br>
+            </div>
+            <hr class="my-4">
+          </div>
+          <div class="col-sm-5 descripcion">
+            <div class="row">
+              <div class="col-sm-12 containertotal">
+                <div class="row totalLabel">
+                  <br>
+                  <label class="total"><h1>Total: $<span>{{total}}</span></h1></label>
+                  <br>
+                </div>
+                <div class="row btn-group">
+                  <button type="button" class="btn btn-danger btn-lg" (click)="onHome()">Cancelar</button>
+                  <button type="button" class="btn btn-success btn-lg"(click)="pagar()">Pagar</button>
+                  <button type="button" class="btn btn-primary btn-lg" (click)="limpiarCompra()">Borrar</button>
+                </div>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row btn-group">
+          <button type="button" class="btn btn-info btn-lg" (click)="onHome()">Atras</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #noProductos>
+    <hr>
+    <h5>No hay productos en el carrito de compras</h5>
+  </ng-template>
+</div>

@@ -1,0 +1,51 @@
+.fondo-principal{
+  width: 100vw;
+  height: 200vw;
+  background-image: url(/src/assets/img/main-fondo.jpg) !important;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #fff;
+}
+
+.container-fluid{
+  width: 100%;
+  padding-left: 0px;
+  margin-left:0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.jumbotron{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #fff;
+}
+
+.descripcion{
+  font-size: 2em;
+}
+
+.title{
+  padding-left: 15px;
+}
+
+.imgProd{
+  width: 100%;
+  max-height: 277px;
+}
+
+.card{
+  left: 12px;
+  border: 0px;
+}
+
+.btn-group{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
