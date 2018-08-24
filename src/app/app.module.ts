@@ -14,7 +14,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
-import { DescripProductoComponent } from './descrip-producto/descrip-producto.component';
 import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ProductosComponent } from './productos/productos.component';
@@ -26,7 +25,7 @@ import { AuthService } from './auth.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 
 import { AuthGuard } from './auth.guard';
-import { SearchPipe } from './search.pipe';
+//import { SearchPipe } from './search.pipe';
 
 
 @NgModule({
@@ -35,11 +34,10 @@ import { SearchPipe } from './search.pipe';
     LoginComponent,
     HomePageComponent,
     CarritoComprasComponent,
-    DescripProductoComponent,
     BarraNavegacionComponent,
     RegistroComponent,
     ProductosComponent,
-    SearchPipe
+    //SearchPipe
   ],
   imports: [
     BrowserModule,
