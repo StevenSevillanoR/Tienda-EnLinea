@@ -1,0 +1,30 @@
+<div class="container-fluid fondo-principal">
+  <barra-navegacion></barra-navegacion>
+  <div class="jumbotron">
+    <div class="row card-body">
+      <div class="row card col-sm-12" *ngFor="let productos of productos">
+        <div class="row title">
+          <h1>{{productos.nombre}}</h1>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+          <div class="card-image col-sm-6">
+            <img src="{{productos.imagen.path}}" class="img-thumbnail imgProd"/>
+            <br>
+          </div>
+          <div class="col-sm-6 descripcion">
+            <br>
+            <label class="precioProd"><b>Precio:</b> $<span>{{productos.precio}} </span></label>
+            <br>
+            <label class="cantidadProd"><b>Unidades disponibles: </b> <span> {{productos.cantidad}}</span></label>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row btn-group">
+          <button type="button" class="btn btn-info btn-lg" (click)="onHome()">Atras</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

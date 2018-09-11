@@ -1,0 +1,41 @@
+<div class="container-fluid fondo-principal">
+  <barra-navegacion></barra-navegacion>
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-8">
+        <h3 class="display-4"><span class="glyphicon glyphicon-th text-info"></span> Cátalogo de Productos</h3>
+      </div>
+      <div class="col-sm-4">
+        <label><h3>Que estas bucando?</h3></label>
+        <input class="buscarProd" [(ngModel)]="textoBusqueda" (keyup)="writeData($event)" placeholder="Buscar producto..."/>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="row card-body" *ngIf="productos?.length>0;else noProductos">
+      <div class="card col-md-3 col-sm-12 collection" *ngFor="let busquedaNom of productos">
+        <img src="{{busquedaNom.imagen.path}}" class="img-thumbnail imgProd"/>
+        <br>
+        <div class="col-sm-12">
+          <label class="nombreProd">{{busquedaNom.nombre}}</label>
+          <br>
+          <label class="precioProd"><b>Precio:</b> $<span>{{busquedaNom.precio}}</span></label>
+          <br>
+          <label class="cantidadProd"><b>Unidades disponibles:</b> <span> {{busquedaNom.cantidad}}</span></label>
+          <br>
+          <div class="col-sm-5 accionProd">
+            <input class="btn btn-info" type="button" id="vermas_{{busquedaNom.nombre}}" (click)="onVerMas($event)" value="Ver Más"/>
+          </div>
+          <div class="col-sm-7 accionProd">
+            <input class="btn btn-danger" type="button" value="Añadir" id="anadir_{{busquedaNom.nombre}}" (click)="onAnadir($event)"/>
+            <input class="col-sm-6 unidades" id="cant_{{busquedaNom.nombre}}" type="number" placeholder="1" min="1" max="{{busquedaNom.cantidad}}" (change)="onCantidad($event)"/>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #noProductos>
+    <hr>
+    <h5>No hay productos para mostrar</h5>
+  </ng-template>
+</div>
