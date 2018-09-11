@@ -1,6 +1,6 @@
 .inicioSe{
   text-align: center;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .btn-facebook, .btn-twitter, .btn-google{
@@ -50,11 +50,16 @@ input.ng-touched.ng-invalid{
   background-color: rgba(255, 0, 0, 0);
   border-color: rgba(255, 0, 0, 0, 0);
   color: #fff;
+  font-size: 2rem;
 }
 
 .principal{
   width: 40%;
   transform: translateY(50%);
+}
+
+#email-input, #password-input{
+  font-size: 1.5rem;
 }
 
 .fondoPrincipal{

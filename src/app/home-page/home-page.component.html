@@ -27,7 +27,7 @@
           </div>
           <div class="col-sm-7 accionProd">
             <input class="btn btn-danger" type="button" value="Añadir" id="anadir_{{busquedaNom.nombre}}" (click)="onAnadir($event)"/>
-            <input class="col-sm-6 unidades" id="cant_{{busquedaNom.nombre}}" type="number" placeholder="1" min="1" (change)="onCantidad($event)"/>
+            <input class="col-sm-6 unidades" id="cant_{{busquedaNom.nombre}}" type="number" placeholder="1" min="1" max="{{busquedaNom.cantidad}}" (change)="onCantidad($event)"/>
           </div>
           <br>
         </div>

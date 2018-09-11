@@ -1,6 +1,6 @@
 .inicioSe{
   text-align: center;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .btn-facebook, .btn-twitter, .btn-google{
@@ -35,6 +35,11 @@ input.ng-touched.ng-invalid{
   background-color: rgba(255, 0, 0, 0);
   border-color: rgba(255, 0, 0, 0, 0);
   color: #fff;
+  font-size: 2rem;
+}
+
+#email-input, #password-input{
+  font-size: 1.5rem;
 }
 
 .principal{
@@ -46,7 +51,7 @@ input.ng-touched.ng-invalid{
   height:100vw;
   width: 100vw;
   margin-left:0px;
-  background-image: url(/src/rassets/img/login-fondo.jpg) !important;
+  background-image: url(/src/assets/img/login-fondo.jpg) !important;
   background-position: center center;
   background-size: cover;
   background-color: #ffffff;

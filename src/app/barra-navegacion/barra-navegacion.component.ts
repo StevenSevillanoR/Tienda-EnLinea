@@ -42,8 +42,6 @@ export class BarraNavegacionComponent implements OnInit {
       //console.log(this.nombres);
     });
 
-    //console.log(this.total);
-
     this.isLoginGoogle = false;
     this.isLoginGoogle = localStorage.getItem("GoogleKey")=="true" ? true : false;
     this.authService.getAuth().subscribe(auth=>{
